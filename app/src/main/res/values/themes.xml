@@ -1,0 +1,182 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChordSense" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="itemActiveIndicatorStyle">@style/App.Custom.Indicator</item>
+        <item name="android:imageButtonStyle">@style/BtnPressedStyle</item>
+        <item name="whiteKeyOpaqueColor">#55c39af8</item>
+        <item name="blackKeyOpaqueColor">#55f47f93</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowSplashScreenBackground">@color/black  </item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionBarSize">0dp</item>
+
+        <item name="whiteKeyPressedColor">#c39af8</item>
+        <item name="blackKeyPressedColor">#f47f93</item>
+        <item name="android:textColorPrimary">#E4DEE7</item>
+        <item name="textInactiveColor">#AAAAAA</item>
+        <item name="preferenceTheme">@style/SettingsTheme</item>
+
+        <item name ="android:colorBackground">#FDFDFD</item>
+        <item name="colorOnBackground">#FDFDFD</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#FAFAFA</item>
+        <item name="colorSurfaceContainer">#F7F7F7</item>
+        <item name="colorPrimary">#8d84a6</item>
+        <item name="colorOnPrimary">#F6F6F6</item>
+        <item name="android:colorPrimary">#8980a2</item>
+        <item name="indicatorColor">#635c75</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:textColor">#333333</item>
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/filledBox</item>
+        <item name="colorSecondary">#8d84a6</item>
+        <item name="android:colorSecondary">#8d84a6</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertLight</item>
+        <item name="bg_dark">#EEEEEE</item>
+        <item name="colorSurfaceDim">#EEFDFDFD</item>
+        <item name="colorControlNormal">#888888</item>
+        <item name="android:textColorSecondary">@color/purple1</item>
+<!--        <item name="switchPreferenceStyle">@style/CustomPreferenceStyle</item>-->
+
+
+
+
+
+        <item name="titleTextColor">#BBBBBB</item>
+
+        <item name="colorSecondaryVariant">#1C1C1C</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+
+    </style>
+
+
+
+    <style name="Theme.ChordSense" parent="Base.Theme.ChordSense">
+        <item name="android:colorBackground">#181818</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:fontFamily">@font/inter_light</item>
+
+        <item name="titleTextColor">#BBBBBB</item>
+        <item name="colorPrimary">#A7FE89</item>
+        <item name="colorSurfaceContainer">#161616</item>
+        <item name="colorSurface">#222222</item>
+        <item name="colorSurfaceVariant">#202020</item>
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/outlinedBox</item>
+        <item name="colorSecondary">#A7FE89</item>
+        <item name="textInactiveColor">#AAAAAA</item>
+        <item name ="colorOnBackground">#181818</item>
+        <item name="android:textColorSecondary">@color/purple1</item>
+
+        <item name="android:colorSecondary">#A7FE89</item>
+        <item name="preferenceTheme">@style/SettingsTheme</item>
+        <item name="colorSecondaryVariant">#1C1C1C</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertLight</item>
+        <item name="bg_dark">#202020</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="indicatorColor">#A7FE89</item>
+        <item name="colorSurfaceDim">#F8181818</item>
+
+    </style>
+
+    <style name="Light" parent="Theme.ChordSense">
+        <item name="whiteKeyPressedColor">#c39af8</item>
+        <item name="blackKeyPressedColor">#f47f93</item>
+        <item name="android:textColorPrimary">#E4DEE7</item>
+        <item name="android:fontFamily">@font/inter_light</item>
+
+        <item name ="android:colorBackground">#FDFDFD</item>
+        <item name="colorOnBackground">#FDFDFD</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#FAFAFA</item>
+        <item name="colorSurfaceContainer">#F7F7F7</item>
+        <item name="colorPrimary">#8d84a6</item>
+        <item name="colorOnPrimary">#F6F6F6</item>
+        <item name="android:colorPrimary">#8980a2</item>
+        <item name="indicatorColor">#635c75</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:textColor">#333333</item>
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/filledBox</item>
+        <item name="colorSecondary">#8d84a6</item>
+        <item name="android:colorSecondary">#8d84a6</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertLight</item>
+        <item name="bg_dark">#EEEEEE</item>
+        <item name="colorSurfaceDim">#EEFDFDFD</item>
+        <item name="colorControlNormal">#888888</item>
+    </style>
+
+    <style name="Light2" parent="Theme.ChordSense">
+        <item name="whiteKeyPressedColor">#c39af8</item>
+        <item name="blackKeyPressedColor">#f47f93</item>
+        <item name ="android:colorBackground">#F4F4F4</item>
+        <item name="colorSurface">#F8F8F8</item>
+        <item name="colorSurfaceVariant">#F8F8F8</item>
+        <item name="colorSurfaceContainer">#EDEDEE</item>
+        <item name="colorPrimary">#585858</item>
+        <item name="android:colorPrimary">#585858</item>
+        <item name="indicatorColor">#635c75</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/filledBox</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="android:colorSecondary">?attr/colorPrimary</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertLight</item>
+        <item name="bg_dark">#EEEEEE</item>
+        <item name="colorSurfaceDim">#F2F2F2F2</item>
+        <item name="colorControlNormal">#888888</item>
+    </style>
+
+
+
+    <style name="Dark2" parent="Base.Theme.ChordSense">
+        <item name="android:colorBackground">#121934</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">#06a099</item>
+        <item name="colorSurfaceContainer">#1c2755</item>
+        <item name="colorSurface">#151d3d</item>
+        <item name="colorSurfaceVariant">#202020</item>
+
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/outlinedBox</item>
+        <item name="android:colorSecondary">#FA7970</item>
+        <item name="preferenceTheme">@style/SettingsTheme</item>
+        <item name="colorSecondaryVariant">#1C1C1C</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertDark</item>
+        <item name="bg_dark">#202020</item>
+        <item name="indicatorColor">#A7FE89</item>
+        <item name="colorSurfaceDim">#F8151d3d</item>
+
+    </style>
+
+    <style name="Dark3" parent="Base.Theme.ChordSense">
+        <item name="android:colorBackground">#181818</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="titleTextColor">#BBBBBB</item>
+        <item name="colorPrimary">#e0c4ff</item>
+        <item name="colorSurfaceContainer">#161616</item>
+        <item name="colorSurface">#222222</item>
+        <item name="colorSurfaceVariant">#202020</item>
+        <item name="materialButtonStyle">@style/outlinedButton</item>
+        <item name="imageButtonStyle">@style/outlinedBox</item>
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="android:colorSecondary">?attr/colorPrimary</item>
+        <item name="preferenceTheme">@style/SettingsTheme</item>
+        <item name="colorSecondaryVariant">#1C1C1C</item>
+        <item name="alertDialogTheme">@style/MaterialDialogAlertDark</item>
+        <item name="bg_dark">#202020</item>
+        <item name="indicatorColor">#A7FE89</item>
+        <item name="colorSurfaceDim">#F8181818</item>
+
+    </style>
+
+
+</resources>

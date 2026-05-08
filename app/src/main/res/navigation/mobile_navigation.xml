@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_progressions">
+
+    <fragment
+        android:id="@+id/navigation_chords"
+        android:name="com.chordsense.chordapp.ui.chords.ChordsFragment"
+        android:label="Chords"
+        tools:layout="@layout/fragment_chords" />
+
+    <fragment
+        android:id="@+id/navigation_progressions"
+        android:name="com.chordsense.chordapp.ui.progressions.ProgressionsFragment"
+        android:label="Progressions"
+        tools:layout="@layout/fragment_progressions" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.chordsense.chordapp.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_csplus"
+        android:name="com.chordsense.chordapp.ui.CSPlusFragment"
+        android:label="Premium"
+        tools:layout="@layout/fragment_csplus" />
+
+</navigation>

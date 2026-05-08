@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:elevation="2dp"
+    android:background="@drawable/box"
+    android:padding="10dp"
+    android:clickable="true"
+    android:clipToOutline="false"
+    android:stateListAnimator="@animator/button_state_list_anim_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/prog_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="?attr/colorPrimary"
+        android:fontFamily="@font/inter_regular"
+        android:background="@null"
+        android:text="IV-V-iii-vi"
+        android:clickable="false"
+        android:singleLine="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/key"/>
+
+    <ImageView
+        android:id="@+id/edit_icon"
+        android:visibility="invisible"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/edit"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@id/prog_name"
+        app:layout_constraintTop_toTopOf="@id/prog_name"
+        app:layout_constraintBottom_toBottomOf="@id/prog_name"/>
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C maj"
+        style="@style/progression_list_item_text"
+        app:layout_constraintTop_toBottomOf="@id/prog_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:clickable="true"
+        android:background="@drawable/star"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="2024-08-17"
+        android:textSize="12sp"
+        style="@style/progression_list_item_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/favorite"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/logo"
+        app:tint="?attr/colorPrimary"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/date"
+        app:layout_constraintRight_toRightOf="@id/date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

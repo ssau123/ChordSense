@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings"
+    android:theme="@style/SettingsTheme">
+
+<!--    <PreferenceCategory android:title="General"-->
+<!--        app:iconSpaceReserved="false">-->
+
+<!--        <ListPreference-->
+<!--            android:id="@+id/set_theme"-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            android:dialogTitle="Theme"-->
+<!--            android:entries="@array/themes"-->
+<!--            android:entryValues="@array/themes"-->
+<!--            android:key="theme"-->
+<!--            android:title="App Theme"-->
+<!--            android:summary="%s" />-->
+
+<!--        <SwitchPreference-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            android:key="land"-->
+<!--            android:summary="Landscape mode displays content at a wider angle and may enhance the user experience for some"-->
+<!--            android:title="Landscape Mode" />-->
+
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:key="intervalLabels"
+
+            android:summary="Use interval names instead of letter names for notes"
+            android:title="Interval Naming" />
+
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:key="modes"
+            app:summary="Create progressions using the seven diatonic modes"
+            android:title="Scale Modes" />
+
+
+<!--        <SwitchPreference-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            android:key="premium"-->
+<!--            android:summary="Test"-->
+<!--            android:title="Premium" />-->
+
+<!--        <SwitchPreference-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            android:key="scrolling"-->
+<!--            android:summary="Scroll to next chord in progression"-->
+<!--            android:title="Auto Scroll Progressions" />-->
+
+
+<!--    </PreferenceCategory>-->
+
+
+<!--    <PreferenceCategory-->
+<!--        app:iconSpaceReserved="false"-->
+<!--        android:title="Restart">-->
+
+<!--        <Preference-->
+<!--            app:iconSpaceReserved="false"-->
+<!--            android:key="Restart"-->
+<!--            android:title="Restart App"/>-->
+
+<!--    </PreferenceCategory>-->
+
+</PreferenceScreen>

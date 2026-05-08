@@ -1,0 +1,10 @@
+<resources>
+    <attr name="whiteKeyPressedColor" format="color" />
+    <attr name="blackKeyPressedColor" format="color"/>
+    <attr name="whiteKeyOpaqueColor" format="color" />
+    <attr name="blackKeyOpaqueColor" format="color"/>
+    <attr name="bgColor" format="color"/>
+    <attr name="keyPressedColor" format="color"/>
+    <attr name="bg_dark" format="color"/>
+    <attr name="textInactiveColor" format="color"/>
+</resources>

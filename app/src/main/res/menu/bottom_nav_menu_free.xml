@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_chords"
+        android:icon="@drawable/chords"
+        android:title="Chords"/>
+
+    <item
+        android:id="@+id/navigation_progressions"
+        android:icon="@drawable/progressions"
+        android:title="Progressions"/>
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/navigation_csplus"
+        android:icon="@drawable/logo"
+        android:title="Premium"/>
+
+</menu>

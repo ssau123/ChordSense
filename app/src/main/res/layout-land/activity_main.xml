@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:clipToOutline="false"
+    android:paddingTop="0dp"
+android:animateLayoutChanges="true">
+
+    <FrameLayout
+        android:id="@+id/nav_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toggle_nav_view"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:elevation="5dp"
+        android:background="@drawable/north_west_24dp_5f6368_fill0_wght300_grad0_opsz24"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/close_nav_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/close"
+        android:elevation="90dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/nav_view"
+        app:layout_constraintRight_toRightOf="@id/nav_view" />
+
+    <com.google.android.material.navigationrail.NavigationRailView
+        android:id="@+id/nav_view"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        app:menuGravity="center"
+        android:padding="10dp"
+        app:itemTextColor="@drawable/nav_bar_color_selector"
+        app:itemIconTint="@drawable/nav_bar_color_selector"
+        app:labelVisibilityMode="labeled"
+        android:elevation="4dp"
+        android:background="@drawable/nav_rail1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:itemActiveIndicatorStyle="@null"
+
+        app:menu="@menu/bottom_nav_menu_free" />
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/sound_menu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="invisible"-->
+<!--        android:elevation="25dp"-->
+<!--        android:outlineProvider="none"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:clickable="true"-->
+<!--        android:background="?attr/android:colorBackground">-->
+
+<!--        <com.github.gzuliyujiang.wheelview.widget.WheelView-->
+<!--            android:id="@+id/sound_preset_picker"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:wheel_cyclicEnabled="true"-->
+<!--            app:wheel_visibleItemCount="5"-->
+<!--            app:wheel_itemTextSize="18sp"-->
+<!--            app:wheel_itemTextSizeSelected="20sp"-->
+<!--            app:wheel_itemTextColorSelected="?attr/colorPrimary"-->
+<!--            app:wheel_indicatorEnabled="false" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/sound_preset_done"-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:src="@drawable/check"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:layout_margin="10dp" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/close_sound_preset"-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:src="@drawable/close"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:layout_margin="10dp" />-->
+<!--    </LinearLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sound_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:elevation="25dp"
+        android:outlineProvider="none"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?attr/colorSurfaceDim">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+            <TextView
+                android:id="@+id/sound_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/menu_text"
+                android:padding="10dp"
+                android:text="Sound Preset"
+                app:layout_constraintBottom_toTopOf="@id/sound_preset_picker"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <com.github.gzuliyujiang.wheelview.widget.WheelView
+                android:id="@+id/sound_preset_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:wheel_cyclicEnabled="true"
+                app:wheel_visibleItemCount="5"
+                app:wheel_itemTextSize="18sp"
+                app:wheel_itemTextSizeSelected="20sp"
+                app:wheel_itemTextColorSelected="?attr/colorPrimary"
+                app:wheel_indicatorEnabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <ImageButton
+                android:id="@+id/sound_preset_done"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/check"
+                android:background="@drawable/circle"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/sound_preset_picker"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/close_sound_menu"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/close"
+            android:backgroundTint="@color/black1"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="?attr/colorSurfaceDim"
+        android:gravity="center"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Sounds: 0%"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/restart_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSurfaceDim"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="?attr/colorPrimary"
+                android:textAlignment="center"
+                android:text="Thank you for your purchase! All Premium Features will be unlocked and available once you restart the app. Before restarting, make sure to save any progressions you wish to keep."/>
+
+            <ImageButton
+                android:id="@+id/ok"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/check"
+                android:layout_marginTop="10dp" />
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
